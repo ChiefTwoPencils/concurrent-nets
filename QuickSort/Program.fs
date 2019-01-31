@@ -45,7 +45,11 @@ let getRandomArray() =
 let main _ = 
     let stopWatch = Stopwatch.StartNew()
     let aList = getRandomArray()
-    let sorted = aList |> quickSortParallelWithDepth 8 // quickSortParallel // quickSortSequential
+    let pCount = float Environment.ProcessorCount
+    let logBase = 2.
+    let minDepth = 4
+    let maxDepth = (((int) (Math.Log(pCount, logBase)) + minDepth))
+    let sorted = aList |> quickSortParallelWithDepth maxDepth // quickSortParallel // quickSortSequential
     stopWatch.Stop |> ignore
     Console.WriteLine("{0} elements : {1}", sorted.Length, (float) stopWatch.ElapsedMilliseconds / 1000.0) |> ignore
     0 // return an integer exit code
