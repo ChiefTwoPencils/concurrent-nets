@@ -7,23 +7,18 @@ namespace Snippets
     {
         static void Main(string[] args)
         {
-            Console.WriteLine((int) '0');
             Func<int, string> f = i =>
             {
-                var j = i % 10;
-                var collection = Enumerable
-                    .Range(0, 10)
-                    .Select(k => '0' + (char)k)
-                    .ToList()
+                var j = i % 1000;
+                return Enumerable
+                    .Range(0, 1000)
+                    .Select(k => '0' + (char)(k * 2))
                     .ElementAt(j)
                     .ToString();
-                return collection;
             };
-
             Func<string, int> g = s => int.Parse(s);
-
             var gof = f.Compose(g);
-            Console.WriteLine(gof(110));
+            Console.WriteLine(gof(333));
         }
     }
 
