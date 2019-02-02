@@ -45,28 +45,29 @@ namespace MemCrawler
             return key => cache.GetOrAdd(key, k => f(k));
         }
 
-        static void Main()
-        {
-            var urls = new List<string>
-            {
-                @"http://www.google.com",
-                @"http://www.microsoft.com",
-                @"http://www.bing.com",
-                @"http://www.google.com"
-            };
-            var watch = new Stopwatch();
-            Console.WriteLine($"Starting basic crawl");
-            watch.Start();
-            Test(urls, WebCrawler);
-            watch.Stop();
-            Console.WriteLine($"Finshed basic in {watch.ElapsedMilliseconds / 1000}.\n\n");
-            Console.WriteLine($"Starting mem-ed crawl");
-            watch.Reset();
-            watch.Start();
-            Test(urls, MemoizeThreadSafe<string, IEnumerable<string>>(WebCrawler));
-            watch.Stop();
-            Console.WriteLine($"Finshed mem-ed in {watch.ElapsedMilliseconds / 1000}");
-        }
+        // TODO: !! To run this, uncomment this main and do comment the main in Seculation. !!
+        //static void Main()
+        //{
+        //    var urls = new List<string>
+        //    {
+        //        @"http://www.google.com",
+        //        @"http://www.microsoft.com",
+        //        @"http://www.bing.com",
+        //        @"http://www.google.com"
+        //    };
+        //    var watch = new Stopwatch();
+        //    Console.WriteLine($"Starting basic crawl");
+        //    watch.Start();
+        //    Test(urls, WebCrawler);
+        //    watch.Stop();
+        //    Console.WriteLine($"Finshed basic in {watch.ElapsedMilliseconds / 1000}.\n\n");
+        //    Console.WriteLine($"Starting mem-ed crawl");
+        //    watch.Reset();
+        //    watch.Start();
+        //    Test(urls, MemoizeThreadSafe<string, IEnumerable<string>>(WebCrawler));
+        //    watch.Stop();
+        //    Console.WriteLine($"Finshed mem-ed in {watch.ElapsedMilliseconds / 1000}");
+        //}
 
         static void Test(List<string> urls, Func<string, IEnumerable<string>> func)
         {
