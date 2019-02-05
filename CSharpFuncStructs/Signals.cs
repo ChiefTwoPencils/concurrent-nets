@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNet.SignalR;
 using System.Collections.Concurrent;
 
+
 namespace CSharpFuncStructs
 {
     class Signals : Hub

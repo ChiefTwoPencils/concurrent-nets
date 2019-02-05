@@ -91,6 +91,12 @@
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FSharpFuncStructs\FSharpFuncStructs.fsproj">
+      <Project>{7d21c016-f70f-4dfa-ae5f-8537712dc741}</Project>
+      <Name>FSharpFuncStructs</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
