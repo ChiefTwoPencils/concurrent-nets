@@ -13,9 +13,8 @@ namespace CSharpFuncStructs
         public override Task OnConnected()
         {
             var connId = new Guid(Context.ConnectionId);
-            var user = Context.User;
+            var name = Context.User.Identity.Name;
 
-            var name = user.Identity.Name;
             if (onlineUsers.TryAdd(connId, name))
             {
                 RegisterUserConnection(connId, name);
