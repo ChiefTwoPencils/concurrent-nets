@@ -51,8 +51,9 @@
     <None Include="App.config" />
     <Compile Include="Agents.fs" />
     <Compile Include="Person.fs" />
-    <Compile Include="Program.fs" />
     <Compile Include="FList.fs" />
+    <Compile Include="Program.fs" />
+    <Compile Include="LazyList.fs" />
   </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
