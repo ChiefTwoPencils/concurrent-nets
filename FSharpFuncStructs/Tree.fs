@@ -20,6 +20,14 @@ let rec insert item tree =
         else Node(leaf, left, insert item right)
     | Empty -> Node(item, Empty, Empty)
 
+let rec preorder action tree =
+    match tree with
+    | Node(leaf, left, right) ->
+        action leaf
+        preorder action left
+        preorder action right
+    | Empty -> ()
+
 let rec inorder action tree =
     match tree with
     | Node(leaf, left, right) ->
@@ -27,4 +35,14 @@ let rec inorder action tree =
         action leaf
         inorder action right
     | Empty -> ()
+
+let rec postorder action tree =
+    match tree with
+    | Node(leaf, left, right) ->
+        postorder action left 
+        postorder action right
+        action leaf
+    | Empty -> ()
+
+
 
