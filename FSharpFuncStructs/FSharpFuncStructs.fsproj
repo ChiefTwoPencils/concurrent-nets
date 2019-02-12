@@ -54,6 +54,7 @@
     <Compile Include="FList.fs" />
     <Compile Include="LazyList.fs" />
     <Compile Include="Tree.fs" />
+    <Compile Include="ParallelCalc.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <PropertyGroup>
