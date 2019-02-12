@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpFuncStructs", "CSharp
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharpFuncStructs", "FSharpFuncStructs\FSharpFuncStructs.fsproj", "{7D21C016-F70F-4DFA-AE5F-8537712DC741}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ParallelData", "ParallelData", "{4099321F-59CC-4109-8123-293CB602A79F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parallelization", "Parallelization\Parallelization.csproj", "{06397C7C-81A5-47FE-AEC3-36A59F594926}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,8 +43,15 @@ Global
 		{7D21C016-F70F-4DFA-AE5F-8537712DC741}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D21C016-F70F-4DFA-AE5F-8537712DC741}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D21C016-F70F-4DFA-AE5F-8537712DC741}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06397C7C-81A5-47FE-AEC3-36A59F594926}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06397C7C-81A5-47FE-AEC3-36A59F594926}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06397C7C-81A5-47FE-AEC3-36A59F594926}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06397C7C-81A5-47FE-AEC3-36A59F594926}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{06397C7C-81A5-47FE-AEC3-36A59F594926} = {4099321F-59CC-4109-8123-293CB602A79F}
 	EndGlobalSection
 EndGlobal
