@@ -21,6 +21,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EventStreams", "EventStream
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RxPubSub", "RxPubSub\RxPubSub.csproj", "{ECFDCDEE-5F83-4C05-B6C9-431E631DD90D}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Emotions", "Emotions\Emotions.fsproj", "{34550473-E1D2-4902-9C61-E80A8B0DE9A7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,10 @@ Global
 		{ECFDCDEE-5F83-4C05-B6C9-431E631DD90D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECFDCDEE-5F83-4C05-B6C9-431E631DD90D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECFDCDEE-5F83-4C05-B6C9-431E631DD90D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34550473-E1D2-4902-9C61-E80A8B0DE9A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34550473-E1D2-4902-9C61-E80A8B0DE9A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34550473-E1D2-4902-9C61-E80A8B0DE9A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34550473-E1D2-4902-9C61-E80A8B0DE9A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,5 +68,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{06397C7C-81A5-47FE-AEC3-36A59F594926} = {4099321F-59CC-4109-8123-293CB602A79F}
 		{ECFDCDEE-5F83-4C05-B6C9-431E631DD90D} = {B83F397C-1402-424D-9FBD-F589BDD48E15}
+		{34550473-E1D2-4902-9C61-E80A8B0DE9A7} = {B83F397C-1402-424D-9FBD-F589BDD48E15}
 	EndGlobalSection
 EndGlobal
