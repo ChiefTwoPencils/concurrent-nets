@@ -12,6 +12,10 @@ namespace RxPubSub
         private List<IObserver<T>> observers = new List<IObserver<T>>();
         private List<IDisposable> observables = new List<IDisposable>();
 
+        public RxPubSub(ISubject<T> subject) { this.subject = subject; }
+
+        public RxPubSub() : this(new Subject<T>()) { }
+
         public IDisposable Subscribe(IObserver<T> observer)
         {
             observers.Add(observer);
