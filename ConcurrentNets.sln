@@ -17,6 +17,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ParallelData", "ParallelDat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parallelization", "Parallelization\Parallelization.csproj", "{06397C7C-81A5-47FE-AEC3-36A59F594926}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EventStreams", "EventStreams", "{B83F397C-1402-424D-9FBD-F589BDD48E15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RxPubSub", "RxPubSub\RxPubSub.csproj", "{ECFDCDEE-5F83-4C05-B6C9-431E631DD90D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,11 +51,16 @@ Global
 		{06397C7C-81A5-47FE-AEC3-36A59F594926}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06397C7C-81A5-47FE-AEC3-36A59F594926}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06397C7C-81A5-47FE-AEC3-36A59F594926}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECFDCDEE-5F83-4C05-B6C9-431E631DD90D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECFDCDEE-5F83-4C05-B6C9-431E631DD90D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECFDCDEE-5F83-4C05-B6C9-431E631DD90D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECFDCDEE-5F83-4C05-B6C9-431E631DD90D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{06397C7C-81A5-47FE-AEC3-36A59F594926} = {4099321F-59CC-4109-8123-293CB602A79F}
+		{ECFDCDEE-5F83-4C05-B6C9-431E631DD90D} = {B83F397C-1402-424D-9FBD-F589BDD48E15}
 	EndGlobalSection
 EndGlobal
